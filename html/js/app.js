@@ -26,7 +26,7 @@ function ShowNotif(data) {
             $.when($notification.fadeOut()).done(function() {
                 $notification.remove()
             });
-        }, data.length != null ? data.length : 2500);
+        }, data.length != null ? data.length : 4500);
     } else {
         if (data.persist.toUpperCase() == 'START') {
             if (persistentNotifs[data.id] === undefined) {
